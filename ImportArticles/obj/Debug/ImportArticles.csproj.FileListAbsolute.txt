@@ -1,0 +1,9 @@
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\bin\Debug\ImportArticles.exe.config
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\bin\Debug\ImportArticles.exe
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\bin\Debug\ImportArticles.pdb
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Debug\ImportArticles.csprojResolveAssemblyReference.cache
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Debug\ImportArticles.Form1.resources
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Debug\ImportArticles.Properties.Resources.resources
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Debug\ImportArticles.csproj.GenerateResource.Cache
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Debug\ImportArticles.exe
+c:\users\samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Debug\ImportArticles.pdb
