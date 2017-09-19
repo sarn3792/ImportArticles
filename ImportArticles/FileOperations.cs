@@ -11,7 +11,7 @@ namespace ImportArticles
     public class FileOperations
     {
         /// <summary>
-        /// Read file and insert content into List articles
+        /// Read file and return content into List articles
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns>List of articles in a file</returns>
@@ -20,12 +20,13 @@ namespace ImportArticles
             try
             {
                 Application app = new Application();
-                Workbook wb = app.Workbooks.Open(fileName, 0, true, 5, "", "", true, XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
+                Workbook wb = app.Workbooks.Open(fileName, 0, true, 5, "", "", true, XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0); //open file
                 Worksheet ws = (Worksheet)wb.Sheets[1]; //sheet 1
                 Range range = ws.UsedRange;
                 
                 List<Article> list = new List<Article>();
 
+                //read excel rows and cells
                 for(int i=1; i <= range.Rows.Count; i++)
                 {
                     string id = (string)(range.Cells[i, 1] as Range).Value2;

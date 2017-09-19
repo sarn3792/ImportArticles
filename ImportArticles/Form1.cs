@@ -21,7 +21,7 @@ namespace ImportArticles
         {
             try
             {
-                DialogResult result = ofdSelectFile.ShowDialog();
+                DialogResult result = ofdSelectFile.ShowDialog(); //open window to select excel file
                 if(result == DialogResult.OK)
                 {
                     txtFileName.Text = ofdSelectFile.FileName; //show file name
@@ -47,12 +47,12 @@ namespace ImportArticles
                     this.InitializeProgress(list.Count); //progress bar
                     DataBaseSettings db = new DataBaseSettings();
 
-                    foreach (Article article in list)
+                    foreach (Article article in list) //read list of articles and insert them into Database
                     {
-                        //string query = string.Format("EXEC xsp_Rodo '{0}', '{1}'", article.ID, article.Description);
-                        //db.ExecuteQuery(query);
-                        Task.Delay(100).Wait();
-                        pbArticles.Increment(1);
+                        string query = string.Format("EXEC xsp_InsertArticles '{0}', '{1}'", article.ID, article.Description); //stored procedure
+                        db.ExecuteQuery(query);
+                        //Task.Delay(100).Wait();
+                        pbArticles.Increment(1); //progress bar increment
                     }
 
                     MessageBox.Show("Artículos importados correctamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);

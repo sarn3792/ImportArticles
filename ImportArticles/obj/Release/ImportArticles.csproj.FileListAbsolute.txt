@@ -7,3 +7,7 @@ C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArtic
 C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Release\ImportArticles.csproj.GenerateResource.Cache
 C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Release\ImportArticles.exe
 C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Release\ImportArticles.pdb
+C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\bin\Release\ImportArticles.exe.manifest
+C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\bin\Release\ImportArticles.application
+C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Release\ImportArticles.exe.manifest
+C:\Users\Samuel\documents\visual studio 2015\Projects\ImportArticles\ImportArticles\obj\Release\ImportArticles.application
