@@ -20,7 +20,7 @@ namespace ImportArticles
         {
             try
             {
-                connectionString = ConfigurationManager.ConnectionStrings["Testing"].ConnectionString;
+                connectionString = ConfigurationManager.ConnectionStrings["Production"].ConnectionString;
                 conn = new SqlConnection(connectionString);
             } catch (Exception ex)
             {

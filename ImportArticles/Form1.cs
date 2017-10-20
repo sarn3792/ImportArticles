@@ -49,7 +49,8 @@ namespace ImportArticles
 
                     foreach (Article article in list) //read list of articles and insert them into Database
                     {
-                        string query = string.Format("EXEC xsp_InsertArticles '{0}', '{1}'", article.ID, article.Description); //stored procedure
+                        string query = string.Format("EXEC xsp_InsertArticles '{0}', '{1}', '{2}', {3}, {4}, {5}, '{6}'", 
+                                                    article.ID, article.Description, article.Marca, article.PrecioVenta, article.PrecioLista, article.Descuento, article.Proyecto); //stored procedure
                         db.ExecuteQuery(query);
                         //Task.Delay(100).Wait();
                         pbArticles.Increment(1); //progress bar increment

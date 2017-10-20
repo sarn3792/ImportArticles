@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImportArticles.exe" size="19432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImportArticles.exe" size="20456">
       <assemblyIdentity name="ImportArticles" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fGiwt0bMfZTO4ABtzxN9WVObeXHT+1FgnZO9QLGgCCA=</dsig:DigestValue>
+        <dsig:DigestValue>g9BbZfkDgxWZaRX/jWn3zHj5qC5eXkzbkDECpf7Iyp0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
