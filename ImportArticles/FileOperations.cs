@@ -44,7 +44,10 @@ namespace ImportArticles
                         decimal precioLista = (decimal)(range.Cells[i, 5] as Excel.Range).Value2;
                         decimal descuento = (decimal)(range.Cells[i, 6] as Excel.Range).Value2;
                         string proyecto = (string)(range.Cells[i, 7] as Excel.Range).Value2;
-                        list.Add(new Article(id, description, marca, precioVenta, precioLista, descuento, proyecto));
+                        string codigoSat = (range.Cells[i, 8] as Excel.Range).Value2 != null ? Convert.ToString((double)(range.Cells[i, 8] as Excel.Range).Value2) : string.Empty;
+                        string unidadMedida = (range.Cells[i, 9] as Excel.Range).Value2 != null ? (string)(range.Cells[i, 9] as Excel.Range).Value2 : string.Empty;
+
+                        list.Add(new Article(id, description, marca, precioVenta, precioLista, descuento, proyecto, codigoSat, unidadMedida));
                     }
                 }
                 //using (StreamReader sr = new StreamReader(fileName, Encoding.GetEncoding("iso-8859-1")))

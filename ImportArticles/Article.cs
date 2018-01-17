@@ -15,8 +15,10 @@ namespace ImportArticles
         public decimal PrecioLista { get; set; }
         public decimal Descuento { get; set; }
         public string Proyecto { get; set; }
+        public string CodigoSat { get; set; }
+        public string UnidadMedida { get; set;}
 
-        public Article(string ID, string Description, string Marca, decimal PrecioVenta, decimal PrecioLista, decimal Descuento, string Proyecto)
+        public Article(string ID, string Description, string Marca, decimal PrecioVenta, decimal PrecioLista, decimal Descuento, string Proyecto, string CodigoSat, string UnidadMedida)
         {
             this.ID = ID;
             this.Description = Description;
@@ -25,6 +27,8 @@ namespace ImportArticles
             this.PrecioLista = PrecioLista;
             this.Descuento = Descuento;
             this.Proyecto = Proyecto;
+            this.CodigoSat = CodigoSat;
+            this.UnidadMedida = UnidadMedida;
         }
     }
 }

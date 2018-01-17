@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImportArticles.exe" size="19432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImportArticles.exe" size="20456">
       <assemblyIdentity name="ImportArticles" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fGiwt0bMfZTO4ABtzxN9WVObeXHT+1FgnZO9QLGgCCA=</dsig:DigestValue>
+        <dsig:DigestValue>1TIu2RJlPyNBlCZGqsWEHcJXGrBe+FEf1y/2qmeWw4A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ImportArticles.exe.config" size="530">
+  <file name="ImportArticles.exe.config" size="520">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bR7M2lCA9QJwIQMBQVX9nqrJPnwfmGVsHw8WQoknG1U=</dsig:DigestValue>
+      <dsig:DigestValue>QkZIQEi0SaTr3Zk+JD/eryPBgd4H2Bye7DFSsU6MPGE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
