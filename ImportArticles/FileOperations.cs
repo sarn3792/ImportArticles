@@ -35,14 +35,14 @@ namespace ImportArticles
                 //read excel rows and cells
                 for(int i=1; i <= range.Rows.Count; i++)
                 {
-                    string id = (string)(range.Cells[i, 1] as Excel.Range).Value2;
-                    string description = (string)(range.Cells[i, 2] as Excel.Range).Value2;
-                    string marca = (string)(range.Cells[i, 3] as Excel.Range).Value2;
-                    if (id != null && description != null && marca != null) //Avoid reading "invisible" rows
+                    string id = (range.Cells[i, 1] as Excel.Range).Text.ToString();
+                    string description = (range.Cells[i, 2] as Excel.Range).Text.ToString();
+                    string marca = (range.Cells[i, 3] as Excel.Range).Text.ToString();
+                    if (id != null && id != string.Empty && description != null && description != string.Empty && marca != null && marca != string.Empty) //Avoid reading "invisible" rows
                     {
-                        decimal precioVenta = (decimal)(range.Cells[i, 4] as Excel.Range).Value2;
-                        decimal precioLista = (decimal)(range.Cells[i, 5] as Excel.Range).Value2;
-                        decimal descuento = (decimal)(range.Cells[i, 6] as Excel.Range).Value2;
+                        decimal precioVenta = (range.Cells[i, 4] as Excel.Range).Value2 != null ? (decimal)(range.Cells[i, 4] as Excel.Range).Value2 : 0 ;
+                        decimal precioLista = (range.Cells[i, 5] as Excel.Range).Value2 != null ? (decimal)(range.Cells[i, 5] as Excel.Range).Value2 : 0;
+                        decimal descuento = (range.Cells[i, 6] as Excel.Range).Value2 != null ? (decimal)(range.Cells[i, 6] as Excel.Range).Value2 : 0;
                         string proyecto = (string)(range.Cells[i, 7] as Excel.Range).Value2;
                         string codigoSat = (range.Cells[i, 8] as Excel.Range).Value2 != null ? Convert.ToString((double)(range.Cells[i, 8] as Excel.Range).Value2) : string.Empty;
                         string unidadMedida = (range.Cells[i, 9] as Excel.Range).Value2 != null ? (string)(range.Cells[i, 9] as Excel.Range).Value2 : string.Empty;
