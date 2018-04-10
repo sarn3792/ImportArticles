@@ -46,8 +46,8 @@ namespace ImportArticles
                         string proyecto = (string)(range.Cells[i, 7] as Excel.Range).Value2;
                         string codigoSat = (range.Cells[i, 8] as Excel.Range).Value2 != null ? Convert.ToString((double)(range.Cells[i, 8] as Excel.Range).Value2) : string.Empty;
                         string unidadMedida = (range.Cells[i, 9] as Excel.Range).Value2 != null ? (string)(range.Cells[i, 9] as Excel.Range).Value2 : string.Empty;
-
-                        list.Add(new Article(id, description, marca, precioVenta, precioLista, descuento, proyecto, codigoSat, unidadMedida));
+                        string inventariable = (range.Cells[i, 10] as Excel.Range).Value2 != null ? (string)(range.Cells[i, 10] as Excel.Range).Value2 : "S";
+                        list.Add(new Article(id, description, marca, precioVenta, precioLista, descuento, proyecto, codigoSat, unidadMedida, inventariable.ToUpper()));
                     }
                 }
                 //using (StreamReader sr = new StreamReader(fileName, Encoding.GetEncoding("iso-8859-1")))

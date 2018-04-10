@@ -17,8 +17,9 @@ namespace ImportArticles
         public string Proyecto { get; set; }
         public string CodigoSat { get; set; }
         public string UnidadMedida { get; set;}
+        public string Inventariable { get; set; }
 
-        public Article(string ID, string Description, string Marca, decimal PrecioVenta, decimal PrecioLista, decimal Descuento, string Proyecto, string CodigoSat, string UnidadMedida)
+        public Article(string ID, string Description, string Marca, decimal PrecioVenta, decimal PrecioLista, decimal Descuento, string Proyecto, string CodigoSat, string UnidadMedida, string Inventariable)
         {
             this.ID = ID;
             this.Description = Description;
@@ -29,6 +30,7 @@ namespace ImportArticles
             this.Proyecto = Proyecto;
             this.CodigoSat = CodigoSat;
             this.UnidadMedida = UnidadMedida;
+            this.Inventariable = Inventariable;
         }
     }
 }
